@@ -20,4 +20,8 @@ public class Szamla extends BankiSzolgaltatas {
         // Nem implementált metódus
         return false;
     }
+
+    public Kartya ujKarta(String kartyaSzam) {
+        return new Kartya(getTulajdonos(), this, kartyaSzam);
+    }
 }
